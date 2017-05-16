@@ -1,4 +1,9 @@
-﻿Version : 1.0.0.6
+﻿Version : 1.0.0.7
+Date : 16/05/2017
+Object :
+ CSV sur plusieurs lignes
+
+Version : 1.0.0.6
 Date : 17/11/214
 Object :
 	Suppression de la dernière page si vide

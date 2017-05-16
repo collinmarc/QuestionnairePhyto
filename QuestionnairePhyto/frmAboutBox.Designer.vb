@@ -35,14 +35,14 @@ Partial Class frmAboutBox
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAboutBox))
         Me.TableLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.EncodeDecodeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LabelProductName = New System.Windows.Forms.Label()
         Me.LabelVersion = New System.Windows.Forms.Label()
         Me.LabelCopyright = New System.Windows.Forms.Label()
         Me.LabelCompanyName = New System.Windows.Forms.Label()
         Me.TextBoxDescription = New System.Windows.Forms.TextBox()
         Me.OKButton = New System.Windows.Forms.Button()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.EncodeDecodeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel.SuspendLayout()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip1.SuspendLayout()
@@ -88,6 +88,17 @@ Partial Class frmAboutBox
         Me.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.LogoPictureBox.TabIndex = 0
         Me.LogoPictureBox.TabStop = False
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EncodeDecodeToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(68, 26)
+        '
+        'EncodeDecodeToolStripMenuItem
+        '
+        Me.EncodeDecodeToolStripMenuItem.Name = "EncodeDecodeToolStripMenuItem"
+        Me.EncodeDecodeToolStripMenuItem.Size = New System.Drawing.Size(67, 22)
         '
         'LabelProductName
         '
@@ -160,17 +171,6 @@ Partial Class frmAboutBox
         Me.OKButton.Size = New System.Drawing.Size(75, 23)
         Me.OKButton.TabIndex = 0
         Me.OKButton.Text = "&OK"
-        '
-        'ContextMenuStrip1
-        '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EncodeDecodeToolStripMenuItem})
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(68, 26)
-        '
-        'EncodeDecodeToolStripMenuItem
-        '
-        Me.EncodeDecodeToolStripMenuItem.Name = "EncodeDecodeToolStripMenuItem"
-        Me.EncodeDecodeToolStripMenuItem.Size = New System.Drawing.Size(67, 22)
         '
         'frmAboutBox
         '

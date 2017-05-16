@@ -201,7 +201,7 @@ Public Class Element
             sReturn = ""
             For Each oElement As Element In lstElements
                 sReturn = sReturn & oElement.getCSV()
-                sReturn = sReturn & ";" & oElement.ToCSV()
+                sReturn = sReturn & ";" & oElement.ToCSV() & vbCrLf
             Next
         Catch ex As Exception
             sReturn = ""

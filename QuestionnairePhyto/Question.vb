@@ -194,7 +194,7 @@ Public Class Question
             For Each oChoix In ListOfChoix
                 sReturn = sReturn & ";" & oChoix.Libelle & ";" & oChoix.EstSelectionne & ";" & pctAssocie & ";" & oChoix.isAutre
             Next
-            sReturn = sReturn & ";" & Me.Precision & ";" & Me.Commentaire
+            sReturn = sReturn & ";" & Me.Precision & ";" & Me.Commentaire & vbCrLf
         Catch ex As Exception
             CSDebug.dispInfo("Question.getcsv ERR" & ex.Message)
             sReturn = ""
